@@ -132,8 +132,8 @@
     }
     .section_two p{
         font-size: 1.8em;
-        padding-left: 9em;
-        padding-right: 9em;
+        padding-left: 15em;
+        padding-right: 16em;
     }
    
     .section_three{
@@ -147,17 +147,16 @@
     .section_three_noticias {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 112px;
+        grid-gap: 40px;
     }
     .section_three_noticias_card{
         font-size: 16px;
         padding-left: 0em;
         padding-right: 0em;
-        margin-left: -80px;
     }
     .section_three_noticias_card img{
-        width: 18.75em;
-        height: 18.75em;
+        width: 20.75em;
+        height: 20.75em;
     }
     .section_three_noticias_card p{
         font-size: 1em;
