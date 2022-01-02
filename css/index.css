@@ -1,6 +1,4 @@
-.contenido{
-    background-color: var(--backgroung-main-content) ;
-}
+
 
 .section_one{
     display: flex;
@@ -20,7 +18,7 @@
     position: absolute;
     top: 50%;
     left: 47%;
-    transform: translate(-55%, -50%);
+    transform: translate(-73%, -50%);
 }
 .section_one_text p{
     font-size: 1.9em;
@@ -55,9 +53,7 @@
     font-size: 1em;
     text-decoration: none;
   }
-.bold{
-    font-weight: bold;
-}
+
 .internal_link:hover{
     color:var(--black);
 }

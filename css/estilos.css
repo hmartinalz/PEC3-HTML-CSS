@@ -24,8 +24,8 @@ h1{
     margin-left: 20px;
     margin-right: 20px;
 }
-q{
-    
+.bold{
+    font-weight: bold;
 }
 /*header section*/
 .header_section{
@@ -39,10 +39,17 @@ q{
     font-weight: normal;
     margin-bottom: 0em;
 } 
+
 .header_section_lema{
     font-size: 3.438em;
     text-decoration: none;
     color:var(--black);
+}
+
+.header_section_navigation{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 .header_section_navigation ul{
     list-style: none;
@@ -95,6 +102,11 @@ q{
     margin-right: 6.25em;
     line-height: 1.6;
 }
+
+.contenido{
+    background-color: var(--backgroung-main-content) ;
+}
+
 /*media queries for the deskopt */
 @media  (min-width: 550px) {
     h1{
