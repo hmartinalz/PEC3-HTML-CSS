@@ -39,7 +39,7 @@ h3{
     font-style: italic;
 }
 /*header section*/
-.header_section{
+.header_section, .navigation{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -57,11 +57,17 @@ h3{
     color:var(--black);
 }
 
-.header_section_navigation{
+.navigation{
     position: -webkit-sticky;
     position: sticky;
-    top: 0px;
+    top: 10px;
+    background-color: white;
 }
+.header_section_navigation{
+    padding-top: 0.125em;
+    padding-bottom: 0.125em;
+}
+
 .header_section_navigation ul{
     list-style: none;
 }
@@ -113,10 +119,21 @@ h3{
     margin-right: 6.25em;
     line-height: 1.6;
 }
-
-.contenido{
-    background-color: var(--backgroung-main-content) ;
+.icon{
+    width: 3.125em;
+    height:3.125em;
+    line-height:3.125em;
+    margin: 0 0 0 auto; /* X,Y */
+    text-align: center;
+    color: white;
 }
+.icon a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 3em;
+    float: left;
+}
+
 /*links*/
 
 .internal_link{
@@ -137,6 +154,11 @@ h3{
     color:var(--black);
     text-decoration: none;
 }
+/*main section of all html*/
+.contenido{
+    background-color: var(--backgroung-main-content) ;
+}
+
 /*main section of videos.html cop26.html*/
 .main_section{
     padding-top: 1.5em;
@@ -144,7 +166,6 @@ h3{
 }
 
 /*index.html*/
-
 .section_one{
     display: flex;
     flex-flow: column wrap;
@@ -199,7 +220,7 @@ h3{
 }
 .form {
     width: 100%;
-    max-width: 555px;
+    max-width: 34.688em;
     margin: 0 auto;
 }
 .custom_input{
@@ -223,18 +244,18 @@ h3{
     font-size: 0.7em;
 }
 .content-input input[type=checkbox ] {
-	width: 12px;
-    height: 12px;
+	width: 0.75em;
+    height: 0.75em;
 }
 .form_button {
     background-color: var(--contrast-color);
     color: var(--white);
     text-transform: uppercase;
-    padding-left: 20px;
-    padding-right: 20px;
-    border:0px;
-    margin-top: 15px;
-    margin-left: 20px;
+    padding-left: 1.25em;
+    padding-right:1.25em;
+    border:0em;
+    margin-top: 0.938em;
+    margin-left: 1.25em;
 }
 .form_button:hover{
     background-color: var(--black);
@@ -242,7 +263,7 @@ h3{
 
 /*videos.html*/
 .videos p {
-    font-size: 15px;
+    font-size: 0.938em;
 }
 .video_card{
     width: 92%;
@@ -277,7 +298,7 @@ h3{
 }
 .cop26_section_2_card_descrip p{
 	padding-right: 1.688em;
-	font-size: 17px;
+	font-size: 1.063em;
 }
 .cop26_section_2_text ol li{
     line-height: 1.6;
@@ -286,11 +307,11 @@ h3{
 @media  (min-width: 550px) {
     h1{
         font-size: 2.375em;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0em;
+        margin-right: 0em;
     }
     h3{
-        font-size: 13px;
+        font-size: 0.813em;
     }
     .header_section{
         width: 57%;
@@ -298,6 +319,18 @@ h3{
         margin-right: auto;
         position: static;
         text-align: left;
+    }
+    .navigation{
+        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0.625em;
+        background-color: white;
+        text-align: left;
+        
+    }
+    .header_section_navigation{
+        margin-left: 21.5%;
     }
     .header_section_descrip{
         margin-left: 2.5em;
@@ -323,8 +356,8 @@ h3{
     }
     ul.footer_section_nav_point>li::before {
         content: "•";
-        padding-right: 8px;
-        padding-left: 8px;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
       } 
     .footer_section_nav ul {
         list-style:circle;
@@ -350,20 +383,20 @@ h3{
     }
    
     .section_three{
-        padding-top: 10px;
+        padding-top: 0.625em;
         width: 55%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 70px;
+        margin-bottom: 4.375em;
     }
 
     .section_three_noticias {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px;
+        grid-gap: 2.5em;
     }
     .section_three_noticias_card{
-        font-size: 16px;
+        font-size: 1em;
         padding-left: 0em;
         padding-right: 0em;
     }
@@ -376,7 +409,7 @@ h3{
     }
     
     .form {
-        max-width: 590px;
+        max-width: 36.875em;
     }
 
     /*videos.html*/
@@ -404,32 +437,19 @@ h3{
         width: 51%;
     }
     .cop26_section_1{
-        width: 390px;
+        width: 24.375em;
     }
     .cop26_section_2{
-        width: 495px;
+        width: 30.938em;
     }
     .cop26_section_2_text{
         text-align: justify;
     }
     .cop26_section_2_card_descrip p{
-        font-size: 18px;
+        font-size: 1.125em;
     }
     .smaller_link_size{
         font-size: 1em;
     }
-}
-.icon{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 0 0 auto; /* X,Y */
-    text-align: center;
-    color: white;
-}
-.icon a{
-    color: var(--white);
-    text-decoration: none;
-    font-size: 3em;
-    float: left;
+   
 }
