@@ -86,8 +86,8 @@ h3{
 .footer_section_content{
     text-align: center; 
     padding-top: 1.25em;
-    padding-bottom: 1.25em;
 }
+
 .footer_section_nav ul , .footer_section_rrss ul{
     list-style: none;
 }
@@ -321,6 +321,11 @@ h3{
         display:inline-block;
         padding-right:0.938em;
     }
+    ul.footer_section_nav_point>li::before {
+        content: "•";
+        padding-right: 8px;
+        padding-left: 8px;
+      } 
     .footer_section_nav ul {
         list-style:circle;
     }
@@ -413,4 +418,18 @@ h3{
     .smaller_link_size{
         font-size: 1em;
     }
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 0 auto; /* X,Y */
+    text-align: center;
+    color: white;
+}
+.icon a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 3em;
+    float: left;
 }
