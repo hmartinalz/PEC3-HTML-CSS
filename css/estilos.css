@@ -331,6 +331,7 @@ h3{
     width: 95%;
     height: 100%;
 }
+
 /*media queries for the deskopt */
 @media  (min-width: 550px) {
     h1{
