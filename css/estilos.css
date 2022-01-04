@@ -20,9 +20,9 @@ p{
 }
 h1{
     text-align: center;
-    font-size:1.5em;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-size:1.65em;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
 }
 h2{
     font-size:1.35em;
@@ -60,7 +60,7 @@ h3{
 .navigation{
     position: -webkit-sticky;
     position: sticky;
-    top: 10px;
+    top: 0.625em;
     background-color: white;
 }
 .header_section_navigation{
@@ -148,7 +148,10 @@ h3{
 .internal_link2{
     color:var(--contrast-color);
     font-size: 1em;
-    text-decoration: underline dotted var(--contrast-color);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: dotted var(--contrast-color);
+    padding-bottom: 0.125em;
 }
 .internal_link2:hover{
     color:var(--black);
@@ -238,10 +241,13 @@ h3{
     margin-left: 1.3em;
 }
 .form_text p{
-    font-size: 0.5em;
+    font-size:0.563em;
 }
 .form_text span{
-    font-size: 0.7em;
+    font-size: 0.563em;
+}
+.form_text a{
+    font-size: 9px;
 }
 .content-input input[type=checkbox ] {
 	width: 0.75em;
@@ -302,6 +308,28 @@ h3{
 }
 .cop26_section_2_text ol li{
     line-height: 1.6;
+}
+
+/*sintomas.html*/
+
+.sintoma_card{
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    margin-top: 1.563em;
+    padding-bottom: 1.25em;
+    background-color: var(--white);
+}
+.sintoma_card_inside{
+    margin-left: 1.25em;
+    padding-top: 1.875em;
+}
+
+.sintoma_card_inside_text{
+    margin-right: 0.938em;
+}
+.sintoma_card_inside img{
+    width: 95%;
+    height: 100%;
 }
 /*media queries for the deskopt */
 @media  (min-width: 550px) {
@@ -451,5 +479,39 @@ h3{
     .smaller_link_size{
         font-size: 1em;
     }
-   
+    
+    /*sintomas.html*/
+
+    .sintoma_card_inside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0em;
+    }
+    .sintoma_card_inside_text{
+        text-align: justify;
+        margin-right:1.25em;
+    }
+    .sintomas{
+        margin-left: 22.5%;
+    }
+    .sintoma_card{
+        width: 46%;
+        position: relative;
+        height: auto;
+    }
+    .sintoma_card_inside_text {
+        text-align: justify;
+        font-size: 0.75em;
+        margin-top: -0.625em;
+    }
+    .sintoma_card_inside_text h2{
+        padding: 0em;
+    }
+    .sintoma_card_inside_text a{
+        font-size: 12px;
+    }
+    .rigth_card{
+        margin-left: 23%;
+        width: 95%;
+    }
 }
