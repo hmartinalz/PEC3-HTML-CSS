@@ -60,6 +60,7 @@ h3{
 .navigation{
     position: -webkit-sticky;
     position: sticky;
+    z-index:1;
     top: 0.625em;
     background-color: white;
 }
@@ -482,16 +483,6 @@ h3{
     }
     
     /*sintomas.html*/
-
-    .sintoma_card_inside{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0em;
-    }
-    .sintoma_card_inside_text{
-        text-align: justify;
-        margin-right:1.25em;
-    }
     .sintomas{
         margin-left: 22.5%;
     }
@@ -500,8 +491,14 @@ h3{
         position: relative;
         height: auto;
     }
-    .sintoma_card_inside_text {
+    .sintoma_card_inside{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0em;
+    }
+    .sintoma_card_inside_text{
         text-align: justify;
+        margin-right:1.25em;
         font-size: 0.75em;
         margin-top: -0.625em;
     }
