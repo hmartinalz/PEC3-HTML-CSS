@@ -1,0 +1,74 @@
+.box {
+    padding: 5px;
+    display: inline-block;
+    background: yellowgreen;
+  }
+  .box1 {
+    background: blue;
+    position: static;
+  }
+  .box2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: red;
+  }
+  
+
+.box3 {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    background: green;
+  }
+.box4{
+    position: fixed;
+  top: 80px;
+  left: 10px;
+  background: red;
+}
+
+.nav-sticky {
+  position: sticky;
+  background: #3C8C8B;
+  position: sticky; 
+  top: 5px;
+}
+.nav {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+}
+.nav ul  li {
+    margin-left: 2.5em;
+    list-style: none;
+}
+.nav ul  li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem; 
+}
+p {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.nav_flexbox{
+  background-color: rgb(158, 157, 157);
+  height: 70px;
+  max-width: 960px;
+}
+.nav_flexbox ul  li {
+  list-style: none;
+}
+.nav_aling ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_center {
+  text-align: center;
+}
